@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD231 course home page - A showcase of web development projects and learning activities">
+  <meta name="author" content="Nick Granados">
+  <title>WDD231 | Your Name</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/profile.png" alt="Nick Granados">
+    <span>Nick Granados</span>
+  </header>
+
+  <nav>
+    <button id="menu-btn" aria-label="Toggle Menu">≡</button>
+    <ul id="primary-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
+      <li>
+        <a href="https://github.com/internick2017" target="_blank">GitHub Profile</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/nick-granados/" target="_blank">LinkedIn</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="card">
+      <h2>Course Work</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Francisco Beltrão - Brasil</h2>
+      <div class="location-content">
+        <img src="images/fco-beltr.jpg" alt="Francisco Beltrão">
+        <p class="caption">Beautiful city in the state of Paraná, Brazil</p>
+      </div>
+    </section>
+
+    <section class="card" id="certificate-section">
+      <h2>Web and Computer Programming Certificate</h2>
+
+      <div class="filter-buttons">
+        <button id="all-btn" class="active">All</button>
+        <button id="cse-btn">CSE</button>
+        <button id="wdd-btn">WDD</button>
+      </div>
+
+      <div id="courses-container">
+        <!-- Course cards will be dynamically generated with JavaScript -->
+      </div>
+
+      <p class="credits-info">
+        Total Credits: <span id="total-credits">0</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="current-year"></span>
+      <span id="full-name">Your Full Name</span> |
+      <span id="location">Your State/Country</span>
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

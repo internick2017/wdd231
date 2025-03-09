@@ -1,0 +1,265 @@
+/* small.css - Base styles for mobile devices */
+
+:root {
+  /* Custom Color Scheme */
+  --primary-color: #1e5b94; /* Deep blue for main elements */
+  --secondary-color: #247ba0; /* Medium blue for accents */
+  --accent-color: #ff9f1c; /* Orange for highlights */
+  --light-color: #f2f7ff; /* Light blue/white for backgrounds */
+  --dark-color: #2c3e50; /* Dark blue/gray for text */
+  --completed-color: #8b4513; /* Brown for completed courses */
+  --incomplete-color: #e9ecef; /* Light gray for incomplete courses */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 0.5rem 0;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  width: 75px;
+  height: auto;
+  margin-right: 1rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+header span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* --- NAVIGATION --- */
+nav {
+  background-color: var(--secondary-color);
+  color: white;
+  position: relative;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav li {
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+nav li.active a {
+  background-color: var(--dark-color);
+  border-left: 4px solid var(--accent-color);
+}
+
+/* --- MAIN CONTENT --- */
+main {
+  padding: 1.5rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.card ul {
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+.location-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.location-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+  font-style: italic;
+}
+
+/* --- CERTIFICATE SECTION --- */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.75rem;
+}
+
+.filter-buttons button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+.filter-buttons button.active {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#courses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.course-card {
+  padding: 1.25rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.course-card.completed {
+  background-color: var(--completed-color);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.course-card.not-completed {
+  background-color: var(--incomplete-color);
+  color: var(--dark-color);
+  border: 1px solid #ddd;
+}
+
+.credits-info {
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer span {
+  margin: 0 0.25rem;
+}
