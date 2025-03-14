@@ -1,0 +1,464 @@
+/* Base CSS for Chamber of Commerce - Mobile First (320px+) */
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+/* Header Styles */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.logo-container img {
+  width: 60px;
+  height: 60px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.site-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.site-name p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+}
+
+#hamburger-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #004080;
+}
+
+#primary-nav {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#primary-nav.open {
+  display: block;
+}
+
+#primary-nav li {
+  padding: 0;
+}
+
+#primary-nav a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#primary-nav a:hover {
+  background-color: #002b55;
+}
+
+.active a {
+  background-color: #002b55;
+  font-weight: bold;
+}
+
+.date-banner {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem;
+}
+
+.directory-main h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #bed;
+  text-align: center;
+}
+
+.menu button {
+  padding: 1rem;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.menu button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Directory Styles */
+#directory-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Grid View */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.grid section {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #eee;
+}
+
+.grid img {
+  height: 75px;
+  max-width: 100%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
+  object-fit: cover;
+}
+
+.grid section > * {
+  margin: 0.1rem;
+}
+
+.grid h3 {
+  font-family: "Caveat", Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+/* List View */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 0;
+  padding: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #eee;
+}
+
+.list section > * {
+  margin: 0 1rem;
+}
+
+.list section img {
+  display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+  font-size: 1rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #003366;
+}
+
+.list section:nth-child(even) {
+  background-color: #bed;
+}
+
+section h3 {
+  font-size: 1.5rem;
+}
+
+section p {
+  font-weight: 600;
+  font-size: smaller;
+  color: #555;
+}
+
+section a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+}
+
+/* Membership Level Styling */
+.membership-level {
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0.3rem 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-name h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.footer-name p,
+.footer-contact p {
+  margin: 0 0 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-contact a {
+  color: #99ccff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer-bottom p {
+  margin: 0 0 0.3rem 0;
+}
+
+/* Directory Page Styles */
+
+.directory-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.view-btn {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+.view-btn.active {
+  background-color: #003366;
+  color: white;
+}
+
+/* Grid View Styles */
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.grid-view section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-view img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+}
+
+.grid-view h3 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin: 0.5rem 0;
+}
+
+.grid-view p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.grid-view a {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #003366;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.grid-view a:hover {
+  background-color: #004080;
+  text-decoration: none;
+}
+
+/* List View Styles */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list-view section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  align-items: center;
+}
+
+.list-view section:nth-child(even) {
+  background-color: #eef5ff;
+}
+
+.list-view h3 {
+  font-size: 1.1rem;
+  color: #003366;
+  margin: 0;
+}
+
+.list-view p {
+  margin: 0.1rem 0;
+  font-size: 0.9rem;
+}
+
+.list-view img {
+  display: none;
+}
+
+.list-view a {
+  padding: 0.2rem 0.5rem;
+  background-color: #003366;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+/* Membership Level Styling */
+
+.gold {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.silver {
+  background-color: #c0c0c0;
+  color: #333;
+}
+
+.member {
+  background-color: #f0f0f0;
+  color: #333;
+}

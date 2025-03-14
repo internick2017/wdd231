@@ -1,0 +1,103 @@
+{
+  "members": [
+    {
+      "name": "Tech Solutions Inc.",
+      "address": "123 Main St, City, ST 12345",
+      "phone": "(555) 123-4567",
+      "website": "https://techsolutions.example.com",
+      "image": "images/tech-solutions.jpg",
+      "membershipLevel": 3,
+      "description": "Providing innovative tech solutions for businesses of all sizes.",
+      "founded": 2005,
+      "employees": 45
+    },
+    {
+      "name": "Green Valley Café",
+      "address": "456 Oak Ave, City, ST 12345",
+      "phone": "(555) 234-5678",
+      "website": "https://greencafe.example.com",
+      "image": "images/green-valley.jpg",
+      "membershipLevel": 2,
+      "description": "Farm-to-table restaurant with organic, locally-sourced ingredients.",
+      "founded": 2012,
+      "employees": 18
+    },
+    {
+      "name": "Smith & Associates Law",
+      "address": "789 Elm Blvd, City, ST 12345",
+      "phone": "(555) 345-6789",
+      "website": "https://smithlaw.example.com",
+      "image": "images/smith-law.jpg",
+      "membershipLevel": 3,
+      "description": "Full-service law firm specializing in business and corporate law.",
+      "founded": 1998,
+      "employees": 23
+    },
+    {
+      "name": "Lakeside Health Clinic",
+      "address": "101 Pine Rd, City, ST 12345",
+      "phone": "(555) 456-7890",
+      "website": "https://lakesidehealth.example.com",
+      "image": "images/lakeside-health.jpg",
+      "membershipLevel": 1,
+      "description": "Comprehensive healthcare services for the whole family.",
+      "founded": 2008,
+      "employees": 32
+    },
+    {
+      "name": "Cornerstone Real Estate",
+      "address": "202 Cedar Ln, City, ST 12345",
+      "phone": "(555) 567-8901",
+      "website": "https://cornerstone.example.com",
+      "image": "images/cornerstone.jpg",
+      "membershipLevel": 2,
+      "description": "Helping families find their dream homes since 2001.",
+      "founded": 2001,
+      "employees": 15
+    },
+    {
+      "name": "Bright Future Academy",
+      "address": "303 Birch Dr, City, ST 12345",
+      "phone": "(555) 678-9012",
+      "website": "https://brightfuture.example.com",
+      "image": "images/bright-future.jpg",
+      "membershipLevel": 3,
+      "description": "Providing quality education and childcare for children ages 3-12.",
+      "founded": 2010,
+      "employees": 28
+    },
+    {
+      "name": "Mountain View Landscaping",
+      "address": "404 Spruce Ct, City, ST 12345",
+      "phone": "(555) 789-0123",
+      "website": "https://mountainview.example.com",
+      "image": "images/mountain-view.jpg",
+      "membershipLevel": 1,
+      "description": "Professional landscaping and garden design services.",
+      "founded": 2015,
+      "employees": 12
+    },
+    {
+      "name": "Central Auto Repair",
+      "address": "505 Maple Pl, City, ST 12345",
+      "phone": "(555) 890-1234",
+      "website": "https://centralauto.example.com",
+      "image": "images/central-auto.jpg",
+      "membershipLevel": 2,
+      "description": "Trusted auto repair and maintenance services.",
+      "founded": 1995,
+      "employees": 9
+    },
+    {
+      "name": "Sunrise Bakery",
+      "address": "606 Walnut Way, City, ST 12345",
+      "phone": "(555) 901-2345",
+      "website": "https://sunrisebakery.example.com",
+      "image": "images/sunrise-bakery.jpg",
+      "membershipLevel": 3,
+      "description": "Artisan breads, pastries, and custom cakes for any occasion.",
+      "founded": 2007,
+      "employees": 14
+    }
+  ]
+}

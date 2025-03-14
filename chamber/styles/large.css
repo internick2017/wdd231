@@ -1,0 +1,88 @@
+/* Large Screen CSS for Chamber of Commerce - 800px+ */
+
+@media only screen and (min-width: 800px) {
+  /* Header Styles */
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .site-name h1 {
+    font-size: 1.8rem;
+  }
+
+  .site-name p {
+    font-size: 1rem;
+  }
+
+  .logo-container img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Navigation Styles */
+  nav {
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+
+  #primary-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #primary-nav a {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Main Content Styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  /* Directory Styles */
+  .grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list-view .business-list-item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Footer Styles */
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-top {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    justify-content: space-between;
+  }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Directory Styles */
+  .grid-view {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Media Queries for Responsive Grid */
+
+@media only screen and (min-width: 1024px) {
+  .grid-view {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

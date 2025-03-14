@@ -1,0 +1,70 @@
+/* Medium Screen CSS for Chamber of Commerce - 550px+ */
+
+@media only screen and (min-width: 550px) {
+  /* Header Styles */
+  .site-name h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-name p {
+    font-size: 0.9rem;
+  }
+
+  .social-links img {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Navigation Styles */
+  #primary-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #primary-nav a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  /* Directory Styles */
+  .grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer Styles */
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list-view section {
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list-view section {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+}
