@@ -47,7 +47,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .list-view .business-list-item {
+  .list-view section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

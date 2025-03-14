@@ -68,3 +68,14 @@
     grid-template-columns: 2fr 2fr 1fr;
   }
 }
+
+
+@media only screen and (min-width: 800px) {
+  .grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list-view section {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+}
