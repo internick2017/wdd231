@@ -79,3 +79,47 @@
     grid-template-columns: 2fr 2fr 1fr;
   }
 }
+
+
+/* Medium Screen Layout (550px+) */
+@media only screen and (min-width: 550px) {
+  .home-main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "event weather"
+      "spotlight spotlight";
+  }
+
+  .hero-section {
+    grid-area: hero;
+    height: 400px;
+  }
+
+  .event-section {
+    grid-area: event;
+  }
+
+  .weather-section {
+    grid-area: weather;
+  }
+
+  .spotlights-section {
+    grid-area: spotlight;
+  }
+
+  .spotlights-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .spotlight-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 1.8rem;
+  }
+}

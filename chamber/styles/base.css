@@ -462,3 +462,267 @@ footer {
   background-color: #f0f0f0;
   color: #333;
 }
+
+
+* Home Main Section */
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-overlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.hero-overlay p {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #003366;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #004080;
+}
+
+/* Event Section */
+.event-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-section h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  margin-bottom: 0.5rem;
+}
+
+.event-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Weather Section */
+.weather-section {
+  background-color: #f0f7ff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-section h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-details {
+  text-align: center;
+}
+
+.weather-details p:first-child {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.weather-details p:last-child {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.forecast h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #003366;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.forecast-day {
+  background-color: white;
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+  min-width: 100px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.forecast-day p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Spotlights Section */
+.spotlights-section {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spotlights-section h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.spotlights-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background-color: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.spotlight-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.spotlight-membership {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.spotlight-website {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #003366;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.spotlight-website:hover {
+  background-color: #004080;
+}
+
+/* Membership Level Styling */
+.gold {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.silver {
+  background-color: #c0c0c0;
+  color: #333;
+}
