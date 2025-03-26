@@ -223,6 +223,7 @@ h1 {
   text-align: center;
   font-weight: 500;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .course-card:hover {
@@ -262,4 +263,79 @@ footer p {
 
 footer span {
   margin: 0 0.25rem;
+}
+
+/* Modal Dialog Styles */
+.course-details-modal {
+  max-width: 90%;
+  width: 600px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+.course-details-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #c0392b;
+}
+
+.modal-content h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.modal-content h3 {
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  margin: 0.7rem 0;
+}
+
+.tech-stack ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.tech-stack li {
+  background-color: #f0f0f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
 }

@@ -1,5 +1,3 @@
-// course.js - Manages course data, filtering, and display
-
 document.addEventListener("DOMContentLoaded", () => {
   // Course data - as provided in the assignment
   const courses = [
@@ -77,6 +75,34 @@ document.addEventListener("DOMContentLoaded", () => {
   const allButton = document.getElementById("all-btn");
   const cseButton = document.getElementById("cse-btn");
   const wddButton = document.getElementById("wdd-btn");
+  const modal = document.getElementById("course-modal");
+  const closeButton = document.getElementById("close-modal");
+
+  // Function to display the modal with course details
+  function displayCourseModal(course) {
+    // Populate modal with course data
+    document.getElementById(
+      "modal-subject-number"
+    ).textContent = `${course.subject} ${course.number}`;
+    document.getElementById("modal-title").textContent = course.title;
+    document.getElementById("modal-credits").textContent = course.credits;
+    document.getElementById("modal-description").textContent =
+      course.description;
+    document.getElementById("modal-certificate").textContent =
+      course.certificate;
+
+    // Clear and populate tech stack
+    const techStackList = document.getElementById("modal-tech-stack");
+    techStackList.innerHTML = "";
+    course.technology.forEach((tech) => {
+      const li = document.createElement("li");
+      li.textContent = tech;
+      techStackList.appendChild(li);
+    });
+
+    // Show the modal
+    modal.showModal();
+  }
 
   // Function to display courses
   function displayCourses(courseList) {
@@ -99,6 +125,11 @@ document.addEventListener("DOMContentLoaded", () => {
           <p class="course-title">${course.title}</p>
           <p class="course-credits">${course.credits} credits</p>
         `;
+
+      // Add click event listener to open modal when card is clicked
+      courseCard.addEventListener("click", () => {
+        displayCourseModal(course);
+      });
 
       coursesContainer.appendChild(courseCard);
     });
@@ -139,6 +170,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // Use filter method to get WDD courses
     const wddList = courses.filter((course) => course.subject === "WDD");
     displayCourses(wddList);
+  });
+
+  // Close modal when clicking the close button
+  closeButton.addEventListener("click", () => {
+    modal.close();
+  });
+
+  // Close modal when clicking outside the modal
+  modal.addEventListener("click", (event) => {
+    // Check if the click is on the dialog itself (backdrop) and not its content
+    if (event.target === modal) {
+      modal.close();
+    }
   });
 
   // Initial display of all courses
