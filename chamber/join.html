@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Chamber of Commerce - Apply for membership through our online application form">
+    <meta name="author" content="Nick Granados">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Membership Application">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://internick2017.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://internick2017.github.io/wdd231/chamber/join.html">
+    <meta property="og:description" content="Apply for membership with our Chamber of Commerce to connect with local businesses and grow your network.">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Chamber of Commerce | Join</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                <div class="site-name">
+                    <h1>Chamber of Commerce</h1>
+                    <p>Your Community Partner</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <button id="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+            </div>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date-banner">
+            <span id="current-date">Today's Date</span>
+        </div>
+    </header>
+
+    <main>
+        <h2>Join the Chamber</h2>
+        <p>Complete the form below to apply for membership in our Chamber of Commerce. Choose the membership level that best fits your organization's needs.</p>
+
+        <div class="membership-form-container">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name <span class="required">*</span>
+                        <input type="text" name="first-name" title="First Name" required autocomplete="given-name">
+                    </label>
+                    <label class="top">Last Name <span class="required">*</span>
+                        <input type="text" name="last-name" title="Last Name" required autocomplete="family-name">
+                    </label>
+                    <label class="top">Position/Title
+                        <input type="text" name="position" title="Position Title" autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$" placeholder="At least 7 characters (letters, hyphens and spaces only)">
+                    </label>
+                    <label class="top">Email <span class="required">*</span>
+                        <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@domain.com">
+                    </label>
+                    <label class="top">Phone Number <span class="required">*</span>
+                        <input type="tel" name="phone" title="Phone Number" required autocomplete="tel">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business/Organization Name <span class="required">*</span>
+                        <input type="text" name="business-name" title="Business Name" required autocomplete="organization">
+                    </label>
+                    <label class="top">Membership Level
+                        <select name="membership-level" title="Membership Level">
+                            <option value="np">NP Membership (Non-Profit, No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label class="top">Business Description
+                        <textarea name="description" title="Business Description" rows="5"></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application" class="submitBtn">
+            </form>
+
+            <div class="membership-levels">
+                <div class="membership-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p><strong>No Fee</strong></p>
+                    <a href="#" class="info-link" data-modal="np-modal">View Benefits</a>
+                </div>
+                <div class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level membership for small businesses</p>
+                    <p><strong>$50/year</strong></p>
+                    <a href="#" class="info-link" data-modal="bronze-modal">View Benefits</a>
+                </div>
+                <div class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits for growing businesses</p>
+                    <p><strong>$100/year</strong></p>
+                    <a href="#" class="info-link" data-modal="silver-modal">View Benefits</a>
+                </div>
+                <div class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium membership with maximum benefits</p>
+                    <p><strong>$250/year</strong></p>
+                    <a href="#" class="info-link" data-modal="gold-modal">View Benefits</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Membership Modal Windows -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <p>Our Non-Profit Membership is designed specifically for registered non-profit organizations.</p>
+                <ul>
+                    <li>Basic listing in online directory</li>
+                    <li>Chamber newsletter subscription</li>
+                    <li>Invitation to monthly networking events</li>
+                    <li>Opportunity to collaborate with other non-profits</li>
+                    <li>Access to community resources</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <p>Our Bronze Membership is perfect for small businesses and startups.</p>
+                <ul>
+                    <li>Standard listing in online directory</li>
+                    <li>Chamber newsletter subscription</li>
+                    <li>Invitation to monthly networking events</li>
+                    <li>Social media mention (2x per year)</li>
+                    <li>5% discount on chamber events</li>
+                    <li>Access to member-only resources</li>
+                </ul>
+                <p><strong>Annual Fee: $50</strong></p>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <p>Step up your involvement with our Silver Membership package, ideal for established businesses.</p>
+                <ul>
+                    <li>Enhanced listing in online directory with logo</li>
+                    <li>Chamber newsletter subscription</li>
+                    <li>Invitation to monthly networking events with 1 complimentary admission</li>
+                    <li>Social media mentions (4x per year)</li>
+                    <li>Business spotlight in newsletter (1x per year)</li>
+                    <li>15% discount on chamber events</li>
+                    <li>Access to member-only resources and training</li>
+                    <li>Participation in member committees</li>
+                </ul>
+                <p><strong>Annual Fee: $100</strong></p>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <p>Our premium Gold Membership provides maximum visibility and benefits for your business.</p>
+                <ul>
+                    <li>Premium listing in online directory with logo and extended description</li>
+                    <li>Featured spot on Chamber home page (rotating basis)</li>
+                    <li>Chamber newsletter subscription</li>
+                    <li>Invitation to monthly networking events with 2 complimentary admissions</li>
+                    <li>Social media mentions (monthly)</li>
+                    <li>Business spotlight in newsletter (2x per year)</li>
+                    <li>30% discount on chamber events</li>
+                    <li>Access to all member-only resources and premium training</li>
+                    <li>Priority speaking opportunities at chamber events</li>
+                    <li>Advertising opportunities in chamber publications</li>
+                    <li>Direct referrals from chamber staff</li>
+                    <li>Leadership position eligibility on chamber committees</li>
+                </ul>
+                <p><strong>Annual Fee: $250</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                <div class="footer-name">
+                    <h3>Chamber of Commerce</h3>
+                    <p>123 Main Street</p>
+                    <p>City, State ZIP</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@chamber.org</p>
+                <p>+1 (555) 123-4567</p>
+                <p><a href="https://maps.google.com" target="_blank">Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2025</span> Chamber of Commerce | <span>Nick Daniel ALejandro Granados Lares</span> | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* Join Page Styles */
+
+/* Form container layout */
+.membership-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Form styling */
+form {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.error-input {
+  border: 2px solid #e74c3c !important;
+  background-color: #fdf3f2;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.form-error-container {
+  display: none;
+  background-color: #fdf3f2;
+  border: 2px solid #e74c3c;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-error-container.active {
+  display: block;
+}
+
+.form-error-container h4 {
+  color: #e74c3c;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.form-error-container ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.form-error-container li {
+  margin-bottom: 0.25rem;
+}
+
+form fieldset {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+form legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  color: #0077b6;
+}
+
+form label {
+  display: block;
+  margin: 1rem 0;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+}
+
+form input.submitBtn {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form input.submitBtn:hover {
+  background-color: #023e8a;
+}
+
+.required {
+  color: red;
+}
+
+/* Membership level cards */
+.membership-levels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.membership-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.membership-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.membership-card:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membership-card h3 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.membership-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.membership-card a:hover {
+  background-color: #023e8a;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #000;
+}
+
+/* Thank you page styles */
+.thank-you-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.thank-you-container h2 {
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+}
+
+.application-details {
+  margin-top: 2rem;
+  text-align: left;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #0077b6;
+}
+
+.application-details h3 {
+  margin-top: 0;
+  color: #0077b6;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.detail-label {
+  font-weight: bold;
+  width: 200px;
+}
+
+.detail-value {
+  flex: 1;
+}
+
+.return-home {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.return-home:hover {
+  background-color: #023e8a;
+}
+
+/* Media queries to match your site's responsive design */
+@media screen and (min-width: 768px) {
+  .membership-levels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .membership-form-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  form {
+    flex: 2;
+  }
+
+  .membership-levels {
+    flex: 1;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+}
