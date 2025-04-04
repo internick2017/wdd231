@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover interesting places and attractions in our local area through the Chamber of Commerce guide.">
+    <meta name="author" content="Nick Granados">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Discover Our Local Area - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://internick2017.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://internick2017.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description" content="Explore local attractions and businesses through our Chamber of Commerce discover page.">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Chamber of Commerce | Discover</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                <div class="site-name">
+                    <h1>Chamber of Commerce</h1>
+                    <p>Your Community Partner</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <button id="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
+            </div>
+        </div>
+        <nav>
+            <ul id="primary-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date-banner">
+            <span id="current-date">Today's Date</span>
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <div class="page-title">
+            <h2>Discover Our Community</h2>
+            <p>Explore the hidden gems and popular destinations in our area.</p>
+        </div>
+
+        <div class="discover-container">
+            <div class="visitor-message" id="visitor-message">
+                <!-- Visit message will be inserted here via JavaScript -->
+            </div>
+
+            <div class="discover-grid" id="discover-grid">
+                <!-- Discover cards will be inserted here via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                <div class="footer-name">
+                    <h3>Chamber of Commerce</h3>
+                    <p>123 Main Street</p>
+                    <p>City, State ZIP</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@chamber.org</p>
+                <p>+1 (555) 123-4567</p>
+                <p><a href="https://maps.google.com" target="_blank">Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2025</span> Chamber of Commerce | <span>Nick Daniel ALejandro Granados Lares</span> | WDD 231</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

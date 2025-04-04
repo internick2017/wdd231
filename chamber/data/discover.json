@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Historic Downtown Square",
+      "address": "100 Main Street, City, State ZIP",
+      "description": "Experience the charm of our historic downtown area with boutique shops, local restaurants, and beautiful architecture dating back to the early 1900s. The square hosts regular community events and farmers markets throughout the year.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Riverside Park",
+      "address": "450 River Road, City, State ZIP",
+      "description": "This beautiful 40-acre park offers walking trails, picnic areas, playgrounds, and scenic views of the river. Perfect for family outings, morning jogs, or peaceful afternoon strolls. The park also features a boat launch and fishing pier.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Cultural Arts Center",
+      "address": "275 Broadway Avenue, City, State ZIP",
+      "description": "Our state-of-the-art Cultural Arts Center showcases local talent through art exhibitions, theatrical performances, and music concerts. The center also offers classes and workshops for all ages in various artistic disciplines.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Oakwood Winery",
+      "address": "1825 Vineyard Lane, City, State ZIP",
+      "description": "Nestled in the rolling hills just outside town, Oakwood Winery produces award-winning wines using locally grown grapes. Visit for tastings, tours of the vineyard and production facilities, and seasonal harvest events.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Heritage Museum",
+      "address": "350 History Way, City, State ZIP",
+      "description": "Discover the rich history of our region through interactive exhibits, historical artifacts, and engaging storytelling. The museum preserves our community's heritage and offers educational programs for schools and visitors alike.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Sunset Golf Club",
+      "address": "725 Fairway Drive, City, State ZIP",
+      "description": "Enjoy a round of golf on our beautifully maintained 18-hole championship course with stunning views of the surrounding landscape. The club features a pro shop, driving range, and restaurant open to both members and the public.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Lakeside Dining District",
+      "address": "500-600 Lake Shore Drive, City, State ZIP",
+      "description": "Experience waterfront dining at its finest with a variety of restaurants offering fresh seafood, international cuisine, and farm-to-table specialties. Enjoy your meal with breathtaking views of the lake from indoor or outdoor seating.",
+      "image": "https://placehold.co/600x400/png"
+    },
+    {
+      "name": "Mountain Trail Wilderness",
+      "address": "2100 Forest Road, City, State ZIP",
+      "description": "Explore over 25 miles of hiking trails through pristine wilderness with varying difficulty levels. The area features spectacular viewpoints, diverse wildlife, and seasonal wildflower displays. Guided hikes are available through the visitor center.",
+      "image": "https://placehold.co/600x400/png"
+    }
+  ]
+}

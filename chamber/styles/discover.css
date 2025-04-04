@@ -1,0 +1,142 @@
+/* discover.css - Styles specific to the discover page */
+.discover-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.discover-container {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.visitor-message {
+  background-color: #f0f7ff;
+  border-left: 4px solid #4682b4;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  font-weight: 500;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: 1.5rem;
+}
+
+.discover-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.discover-card figure {
+  margin: 0;
+  overflow: hidden;
+  width: calc(100% - 2rem);
+  height: 200px;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Image hover effect (not applied to mobile) */
+@media screen and (min-width: 641px) {
+  .discover-card:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.discover-card .card-content {
+  padding: 1.25rem;
+}
+
+.discover-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.discover-card address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.discover-card p {
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.discover-card .learn-more {
+  display: inline-block;
+  background-color: #4682b4;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.discover-card .learn-more:hover {
+  background-color: #3a6b99;
+}
+
+/* Add grid-area assignments for each card */
+.discover-card:nth-child(1) {
+  grid-area: card1;
+}
+.discover-card:nth-child(2) {
+  grid-area: card2;
+}
+.discover-card:nth-child(3) {
+  grid-area: card3;
+}
+.discover-card:nth-child(4) {
+  grid-area: card4;
+}
+.discover-card:nth-child(5) {
+  grid-area: card5;
+}
+.discover-card:nth-child(6) {
+  grid-area: card6;
+}
+.discover-card:nth-child(7) {
+  grid-area: card7;
+}
+.discover-card:nth-child(8) {
+  grid-area: card8;
+}
+
