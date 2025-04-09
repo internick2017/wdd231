@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Teacher Lanny for English language instruction and services">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Contact - Teacher Lanny">
+    <meta property="og:description" content="Get in touch with Teacher Lanny for English language instruction">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/teacherlanny/contact.html">
+    <title>Contact - Teacher Lanny</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Teacher Lanny</a>
+        </div>
+        <nav>
+            <button id="hamburgerBtn">☰</button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dictionary.html">Dictionary</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="btn-primary">Client Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="hero contact-hero">
+            <div class="hero-content">
+                <h1>GET IN TOUCH</h1>
+                <p>Have questions or ready to start your English learning journey? Contact me today!</p>
+            </div>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> info@teacherlanny.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Office Hours:</strong> Monday-Friday, 9am-6pm EST</p>
+                <p><strong>Location:</strong> Online and in-person sessions available</p>
+
+                <div class="services-offered">
+                    <h3>Services Offered</h3>
+                    <ul>
+                        <li>Business English Training</li>
+                        <li>Exam Preparation (TOEFL, IELTS)</li>
+                        <li>Conversational Practice</li>
+                        <li>Writing Improvement</li>
+                        <li>Pronunciation Coaching</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form id="contactForm" action="thankyou.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[-\s]?[0-9]{3}[-\s]?[0-9]{4}">
+                        <small>Format: 123-456-7890</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="business">Business English</option>
+                            <option value="academic">Academic English</option>
+                            <option value="conversation">Conversational English</option>
+                            <option value="writing">Writing Improvement</option>
+                            <option value="pronunciation">Pronunciation Coaching</option>
+                            <option value="other">Other (please specify)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message*</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Subscribe to my newsletter for English learning tips</label>
+                    </div>
+
+                    <button type="submit" class="btn-accent">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy; 2025 Teacher Lanny</p>
+                <p><a href="attributions.html">Attributions</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><span class="social-icon">FB</span></a>
+                <a href="#" aria-label="Twitter"><span class="social-icon">TW</span></a>
+                <a href="#" aria-label="Instagram"><span class="social-icon">IG</span></a>
+                <a href="#" aria-label="LinkedIn"><span class="social-icon">LI</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/contact.js"></script>
+</body>
+</html>

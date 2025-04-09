@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="English Dictionary Tool - Look up words, hear pronunciations, and learn definitions with Teacher Lanny">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Dictionary Tool - Teacher Lanny">
+    <meta property="og:description" content="Look up English words, hear pronunciations, and learn definitions">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/teacherlanny/dictionary.html">
+    <title>Dictionary Tool - Teacher Lanny</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Teacher Lanny</a>
+        </div>
+        <nav>
+            <button id="hamburgerBtn">☰</button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="dictionary.html">Dictionary</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="btn-primary">Client Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dictionary-page">
+        <section class="hero dictionary-hero">
+            <div class="hero-content">
+                <h1>ENGLISH DICTIONARY TOOL</h1>
+                <p>Look up any English word to get definitions, pronunciations, and examples</p>
+            </div>
+        </section>
+
+        <section class="dictionary-search">
+            <h2>Word Lookup</h2>
+            <form id="dictionaryForm">
+                <div class="search-container">
+                    <input type="text" id="wordInput" placeholder="Enter a word..." required>
+                    <button type="submit" class="btn-accent">Search</button>
+                </div>
+            </form>
+            <div id="recent-searches">
+                <h3>Recent Searches</h3>
+                <ul id="recentSearchesList"></ul>
+            </div>
+        </section>
+
+        <section id="results-section" class="dictionary-results">
+            <div id="loading" class="loading-spinner hidden"></div>
+            <div id="error-message" class="error-message hidden"></div>
+            <div id="word-results" class="word-results hidden">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Word of the Day Section -->
+        <section class="word-of-day">
+            <h2>WORD OF THE DAY</h2>
+            <div id="wordOfDay">
+                <!-- Word of the day will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Modal for Detailed Word View -->
+        <div id="wordModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modalContent">
+                    <!-- Modal content will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                <p>&copy; 2025 Teacher Lanny</p>
+                <p><a href="attributions.html">Attributions</a></p>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><span class="social-icon">FB</span></a>
+                <a href="#" aria-label="Twitter"><span class="social-icon">TW</span></a>
+                <a href="#" aria-label="Instagram"><span class="social-icon">IG</span></a>
+                <a href="#" aria-label="LinkedIn"><span class="social-icon">LI</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/dictionary.js"></script>
+</body>
+</html>
